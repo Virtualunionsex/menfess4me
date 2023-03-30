@@ -15,12 +15,12 @@ load_dotenv()
 
 Bot = Client(
     name="confess",
-    bot_token=os.environ.get("BOT_TOKEN", "5668943967:AAEBcDSG-Lz9PluRF_-lMSfbYlAJ2qRCPUg"),
-    api_id=int(os.environ.get("API_ID", "14672956")),  # type: ignore
-    api_hash=os.environ.get("API_HASH", "115e8242ea0423893160bb61a9e05eab"),
+    bot_token=os.environ.get("BOT_TOKEN", "5990927168:AAE3uVXTDPT-zviopBCNMST9m4LABCM97xM"),
+    api_id=int(os.environ.get("API_ID", "16246834")),  # type: ignore
+    api_hash=os.environ.get("API_HASH", "29b3ffa9245c07f05375b92f38e8f13d"),
 )
-KR=-1001839097484
-Start_text = """<i>Hallo! [Anonim 4Me](https://t.me/Anonim4Mebot) akan membantumu untuk mengirimkan pesan secara anonim ke Grup & Channel.
+KR=-1001569500029
+Start_text = """<i>Hallo! [Anonim 4Me](https://t.me/executive02_bot) akan membantumu untuk mengirimkan pesan secara anonim ke Grup & Channel.
 
 Sebelum menggunakan silakan baca rules terlebih dahulu ya🥰</i>
 
@@ -28,7 +28,7 @@ Sebelum menggunakan silakan baca rules terlebih dahulu ya🥰</i>
 <b>🎮 Arena 4Me </b>- <i>Untuk Pesan Arena 4Me</i>
 <i>Klik tombol dibawah sesuai yang kamu mau</i>
 
-<b>Butuh bantuan? Hubungi</b> @Chat4Robot"""
+<b>Butuh bantuan? Hubungi</b> @azure_id"""
 KONTOL = "https://telegra.ph/file/3d0fa0a56b2e91d1b06d9.jpg"
 HOME_TEXT = """
 <b>📪 Confess - Untuk Confess.
@@ -141,8 +141,8 @@ async def home_ban(_, query: CallbackQuery):
                          ]
                        ),
                       ) 
-PVA=-1001854811904
-ADI=-1001792566616    
+PVA=-1001528080636
+ADI=-1001569500029
 @Bot.on_callback_query(filters.regex("cbkritik"))
 async def cbkritik(client, query: CallbackQuery):
   await query.message.delete()  
@@ -156,8 +156,8 @@ async def cbkritik(client, query: CallbackQuery):
   await client.send_message(ADI, f"<b>•Dari: </b> {query.from_user.first_name} [<pre>{query.from_user.id}</pre>]\n<b>•Pesan: </b> <i>{kri.text}</i>")
   await client.send_message(query.from_user.id, "Pesan kamu telah terkirim")
     
-LOG=-1001502192084
-ADM=-1001792566616
+LOG=-1001528080636
+ADM=-1001569500029
 
 @Bot.on_callback_query(filters.regex("cbconfess"))
 async def cbconfess(client, query: CallbackQuery):
