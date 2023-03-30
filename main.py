@@ -141,7 +141,7 @@ async def home_ban(_, query: CallbackQuery):
                          ]
                        ),
                       ) 
-PVA=-1001528080636
+PVA=-1001729142523
 ADI=-1001569500029
 @Bot.on_callback_query(filters.regex("cbkritik"))
 async def cbkritik(client, query: CallbackQuery):
@@ -156,7 +156,7 @@ async def cbkritik(client, query: CallbackQuery):
   await client.send_message(ADI, f"<b>•Dari: </b> {query.from_user.first_name} [<pre>{query.from_user.id}</pre>]\n<b>•Pesan: </b> <i>{kri.text}</i>")
   await client.send_message(query.from_user.id, "Pesan kamu telah terkirim")
     
-LOG=-1001528080636
+LOG=-1001729142523
 ADM=-1001569500029
 
 @Bot.on_callback_query(filters.regex("cbconfess"))
